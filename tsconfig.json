@@ -9,14 +9,24 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    // "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "typeRoots": ["./@types", "./node_modules/@types"],
+    "baseUrl": ".",
+    "paths": {
+      "@styles/*": ["styles/*"]
+      // '@src': path.join(__dirname, 'src'),
+      // '@components': path.join(__dirname, 'src', 'components'),
+      // '@containers': path.join(__dirname, 'src', 'containers'),
+      // '@store': path.join(__dirname, 'src', 'store'),
+      // '@styles': path.join(__dirname, 'styles'),
+    }
   },
-  "baseUrl": ".",
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
