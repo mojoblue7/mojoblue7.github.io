@@ -6,12 +6,8 @@ const productionURL = 'https://mojoblue7.github.io';
 
 module.exports = {
   reactStrictMode: true,
-  assetPrefix: isProduction ? productionURL : '',
+  // assetPrefix: isProduction ? productionURL : '',
   pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
-  images: {
-    loader: 'imgix',
-    path: productionURL,
-  },
   webpack(config, { isServer, buildId }) {
     config.resolve = {
       alias: {
