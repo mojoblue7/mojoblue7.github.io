@@ -12,18 +12,4 @@ module.exports = {
     loader: 'imgix',
     path: productionURL,
   },
-  webpack(config, { isServer, buildId }) {
-    config.resolve = {
-      alias: {
-        '@src': path.join(__dirname, 'src'),
-        '@components': path.join(__dirname, 'src', 'components'),
-        '@containers': path.join(__dirname, 'src', 'containers'),
-        '@store': path.join(__dirname, 'src', 'store'),
-        // '@interface': path.join(__dirname, 'src', '@types/interface.ts'),
-      },
-      ...config.resolve,
-    };
-
-    return config;
-  },
 };
