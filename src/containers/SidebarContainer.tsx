@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {SidebarContainerProps} from './SidebarTypes';
-import Sidebar from './Sidebar'
+import {SidebarContainerProps} from '@/types/SidebarTypes';
+import Sidebar from '@/src/components/Sidebar'
 import { MouseEventHandler } from 'react';
 
 class SidebarContainer extends React.Component<SidebarContainerProps>{

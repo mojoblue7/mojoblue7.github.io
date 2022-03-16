@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
-import MainHeader from '@components/Header/MainHeader'
-import GlobalStyle from '@components/GlobalStyle'
-import GlobalFonts from '@components/GlobalFonts'
+import AppMainHeader from '@/src/components/AppMainHeader'
+import GlobalStyle from '@/src/components/GlobalStyle'
+import GlobalFonts from '@/src/components/GlobalFonts'
 import styled from 'styled-components'
-import SidebarContainer from '@components/Sidebar/SidebarContainer'
+import SidebarContainer from 'src/containers/SidebarContainer'
 import { useState } from 'react'
 
 const Container = styled.div`
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
     <Container>
       <GlobalFonts />
       <GlobalStyle />
-      <MainHeader
+      <AppMainHeader
         text={'mojoblue7.github.io'}
         sidebarInfo={
           {

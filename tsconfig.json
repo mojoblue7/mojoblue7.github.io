@@ -17,9 +17,10 @@
     "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
-      "@styles/*": ["styles/*"],
-      "@components/*": ["src/components/*"],
-      "@images/*": ["public/images/*"]
+      "@/styles/*": ["styles/*"],
+      "@/src/components/*": ["src/components/*"],
+      "@/public/images/*": ["public/images/*"],
+      "@/types/*": ["src/types/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
